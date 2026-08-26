@@ -1,0 +1,58 @@
+:root {
+  --background: #f2efea;
+  --surface: #fff;
+  --text: #111;
+  --muted: #66615b;
+  --primary: #4b63ff;
+  --secondary: #ff6541;
+  --warning: #c7ff39;
+  --display: "Arial Black", Arial, Helvetica, sans-serif;
+  --body: Arial, Helvetica, sans-serif;
+  --mono: ui-monospace, Consolas, "Liberation Mono", monospace;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; }
+body { background: var(--background); color: var(--text); font-family: var(--body); }
+.slide { width: 1280px; height: 720px; overflow: hidden; background: var(--background); }
+
+.slide--cover { display: grid; grid-template-columns: 7fr 5fr; }
+.slide--section { display: grid; grid-template-columns: 2fr 8fr 2fr; padding: 36px; }
+.slide--statement { display: grid; place-items: center; padding: 64px; }
+.slide--data { display: grid; grid-template-columns: 5fr 7fr; gap: 24px; padding: 36px; }
+.slide--process { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; padding: 36px; }
+.slide--comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; padding: 36px; }
+.slide--case-study { display: grid; grid-template-columns: 8fr 4fr; gap: 18px; padding: 36px; }
+.slide--timeline { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; padding: 36px; }
+.slide--matrix { display: grid; grid-template: repeat(3, 1fr) / repeat(4, 1fr); gap: 18px; padding: 36px; }
+.slide--image { display: grid; grid-template-columns: 7fr 5fr; gap: 18px; padding: 36px; }
+.slide--quote { display: grid; grid-template-columns: 4fr 8fr; gap: 18px; padding: 36px; }
+.slide--summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; padding: 36px; }
+
+.preview-canvas { display: grid; grid-template: 1fr 1fr / 54% 46%; border: 4px solid var(--text); }
+.preview-cover { grid-row: 1 / -1; position: relative; padding: 42px 46px; border-right: 4px solid var(--text); overflow: hidden; }
+.primitive-label { display: inline-block; border: 3px solid var(--text); padding: 8px 12px; font: 800 12px/1 var(--mono); text-transform: uppercase; background: var(--warning); }
+.preview-cover h1 { position: relative; z-index: 2; width: 610px; margin: 48px 0 0; font: 900 68px/0.87 var(--display); text-transform: uppercase; letter-spacing: 0; }
+.preview-cover p { position: relative; z-index: 2; width: 390px; margin: 28px 0 0; font-size: 17px; line-height: 1.4; }
+.shape-square { position: absolute; right: 34px; bottom: 42px; width: 182px; height: 182px; background: var(--primary); border: 4px solid var(--text); transform: rotate(9deg); }
+.shape-circle { position: absolute; right: 142px; bottom: 108px; width: 134px; height: 134px; border-radius: 50%; background: var(--warning); border: 4px solid var(--text); }
+.shape-bar { position: absolute; left: 44px; bottom: 40px; width: 235px; height: 28px; background: var(--secondary); border: 4px solid var(--text); }
+.preview-data { position: relative; padding: 34px 38px; background: var(--primary); color: #fff; border-bottom: 4px solid var(--text); }
+.panel-title { display: flex; align-items: center; justify-content: space-between; font: 800 11px/1 var(--mono); text-transform: uppercase; }
+.panel-title b { color: var(--warning); }
+.data-pop { display: grid; grid-template-columns: 1fr 1.2fr; gap: 24px; align-items: end; margin-top: 32px; }
+.data-pop strong { font: 900 90px/0.78 var(--display); }
+.blocks { height: 184px; display: flex; align-items: flex-end; gap: 12px; }
+.blocks i { flex: 1; border: 3px solid var(--text); background: #fff; }
+.blocks i:nth-child(1) { height: 31%; }
+.blocks i:nth-child(2) { height: 55%; background: var(--warning); }
+.blocks i:nth-child(3) { height: 82%; background: var(--secondary); }
+.blocks i:nth-child(4) { height: 100%; }
+.data-note { position: absolute; left: 38px; bottom: 26px; font: 700 11px/1 var(--mono); }
+.preview-process { padding: 30px 38px; background: var(--secondary); }
+.process-pieces { display: flex; align-items: flex-end; gap: 12px; margin-top: 31px; }
+.piece { flex: 1; min-height: 150px; border: 3px solid var(--text); background: var(--background); padding: 14px; }
+.piece:nth-child(2) { min-height: 184px; background: var(--warning); }
+.piece:nth-child(3) { min-height: 126px; background: #fff; }
+.piece b { font: 900 34px/1 var(--display); }
+.piece strong { display: block; margin-top: 42px; font: 900 17px/1 var(--display); text-transform: uppercase; }

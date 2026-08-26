@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "projectName": "Parity Fixture",
+  "entryMode": "confirmed-markdown",
+  "currentGate": "chapters",
+  "approvedGates": [],
+  "outputs": [
+    "html",
+    "pptx"
+  ],
+  "speakerNotes": false,
+  "primaryStyleId": "product-narrative",
+  "secondaryStyleId": null,
+  "fastMode": false,
+  "currentChapter": "chapter-01",
+  "updatedAt": "2026-08-03T00:00:00.000Z"
+}

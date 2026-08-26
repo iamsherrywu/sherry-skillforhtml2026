@@ -1,0 +1,60 @@
+:root {
+  --background: #f9f8f3;
+  --surface: #eeece4;
+  --text: #17191c;
+  --muted: #686b70;
+  --primary: #1f5aa6;
+  --secondary: #d8492f;
+  --warning: #c18728;
+  --display: Georgia, "Times New Roman", serif;
+  --body: Arial, Helvetica, sans-serif;
+  --mono: ui-monospace, Consolas, "Liberation Mono", monospace;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; }
+body { background: var(--background); color: var(--text); font-family: var(--body); }
+.slide { width: 1280px; height: 720px; overflow: hidden; background: var(--background); }
+
+.slide--cover { display: grid; grid-template-rows: auto 1fr auto; padding: 48px 64px; }
+.slide--section { display: grid; grid-template-columns: 3fr 9fr; gap: 40px; padding: 48px 64px; }
+.slide--statement { display: grid; grid-template-columns: 2fr 8fr 2fr; padding: 64px; }
+.slide--data { display: grid; grid-template-columns: 4fr 8fr; gap: 40px; padding: 48px 64px; }
+.slide--process { display: grid; grid-template-columns: 3fr 9fr; gap: 40px; padding: 48px 64px; }
+.slide--comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; padding: 48px 64px; }
+.slide--case-study { display: grid; grid-template-columns: 8fr 4fr; gap: 32px; padding: 48px 64px; }
+.slide--timeline { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; padding: 48px 64px; }
+.slide--matrix { display: grid; grid-template: repeat(4, 1fr) / repeat(4, 1fr); gap: 8px; padding: 48px 64px; }
+.slide--image { display: grid; grid-template-columns: 8fr 4fr; gap: 32px; padding: 48px 64px; }
+.slide--quote { display: grid; grid-template-columns: 2fr 8fr 2fr; padding: 64px; }
+.slide--summary { display: grid; grid-template-columns: 5fr 7fr; gap: 40px; padding: 48px 64px; }
+
+.preview-canvas { display: grid; grid-template: 54px 244px 1fr / 54% 46%; padding: 30px 42px 28px; column-gap: 36px; }
+.journal-head { grid-column: 1 / -1; display: flex; justify-content: space-between; align-self: start; border-top: 5px solid var(--text); border-bottom: 1px solid #b8b5aa; padding: 11px 0 10px; font: 700 10px/1 var(--mono); text-transform: uppercase; }
+.preview-cover { grid-column: 1 / -1; display: grid; grid-template-columns: 1.35fr 0.65fr; gap: 50px; align-items: end; padding: 24px 0 30px; border-bottom: 1px solid #b8b5aa; }
+.preview-cover h1 { margin: 0; max-width: 790px; font: 400 58px/1.01 var(--display); letter-spacing: 0; }
+.abstract { border-left: 3px solid var(--primary); padding-left: 20px; }
+.abstract b { color: var(--primary); font: 700 10px/1 var(--mono); text-transform: uppercase; }
+.abstract p { margin: 12px 0 0; color: var(--muted); font-size: 13px; line-height: 1.45; }
+.preview-data { padding: 26px 30px 0 0; border-right: 1px solid #b8b5aa; }
+.paper-label { display: flex; justify-content: space-between; font: 700 10px/1 var(--mono); text-transform: uppercase; }
+.paper-label b { color: var(--primary); }
+.figure { display: grid; grid-template-columns: 1fr 112px; gap: 20px; margin-top: 18px; }
+.plot { height: 214px; border-left: 1px solid var(--text); border-bottom: 1px solid var(--text); position: relative; }
+.plot svg { width: 100%; height: 100%; }
+.plot line { stroke: #c8c4b8; stroke-width: 1; }
+.plot polyline { fill: none; stroke: var(--primary); stroke-width: 4; }
+.plot circle { fill: var(--background); stroke: var(--primary); stroke-width: 3; }
+.plot circle:last-child { fill: var(--secondary); stroke: var(--secondary); }
+.figure-stat { align-self: center; }
+.figure-stat strong { font: 400 46px/1 var(--display); color: var(--secondary); }
+.figure-stat span { display: block; margin-top: 8px; color: var(--muted); font-size: 11px; line-height: 1.35; }
+.citation { margin: 14px 0 0; color: var(--muted); font: 400 10px/1.35 var(--mono); }
+.preview-process { padding: 26px 0 0; }
+.evidence-chain { margin-top: 22px; }
+.evidence-item { display: grid; grid-template-columns: 38px 1fr auto; gap: 12px; align-items: center; min-height: 57px; border-top: 1px solid #b8b5aa; }
+.evidence-item:last-child { border-bottom: 1px solid #b8b5aa; }
+.evidence-item b { color: var(--secondary); font: 700 11px/1 var(--mono); }
+.evidence-item strong { font: 700 14px/1 var(--body); }
+.evidence-item span { color: var(--muted); font: 400 10px/1 var(--mono); }
+.journal-foot { position: absolute; left: 42px; right: 42px; bottom: 10px; display: flex; justify-content: space-between; color: var(--muted); font: 400 9px/1 var(--mono); }

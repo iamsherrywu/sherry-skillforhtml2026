@@ -72,4 +72,3 @@ npm run check:open-source
 ## English quick start
 
 Install Node.js 20+, Python 3.10+, npm, and the rendering tools. Run `npm install`, `python3 -m pip install -r requirements-dev.txt`, and `npx playwright install chromium`. In Codex, explicitly invoke `/sherry-skillforhtml2026`, provide your topic and source material, and approve each gate when the draft is ready. The generated single-file HTML remains the editable source; PPTX and speaker notes are optional outputs.
-

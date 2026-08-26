@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; font-src data:; connect-src 'none'; object-src 'none'; frame-src 'none'; child-src 'none'; media-src 'none'; worker-src 'none'; manifest-src 'none'; base-uri 'none'; form-action 'none'">
+  <title><!-- {{DECK_TITLE}} --></title>
+  <style>
+<!-- {{DECK_STYLES}} -->
+  </style>
+</head>
+<body>
+  <div id="deck-viewport">
+    <main id="deck-stage" aria-live="polite">
+<!-- {{DECK_SLIDES}} -->
+    </main>
+  </div>
+  <script>
+<!-- {{DECK_SCRIPT}} -->
+  </script>
+</body>
+</html>

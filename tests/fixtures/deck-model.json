@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "title": "Signals in Applied AI",
+    "styleId": "ai-research-journal",
+    "secondaryStyleId": null,
+    "aspectRatio": "16:9"
+  },
+  "slides": [
+    {
+      "id": "p01",
+      "type": "cover",
+      "title": "Signals in Applied AI",
+      "subtitle": "A field guide to evidence, systems, and adoption",
+      "body": ["Research briefing · 2026"],
+      "metric": null,
+      "sections": [],
+      "sourceRefs": []
+    },
+    {
+      "id": "p02",
+      "type": "section",
+      "title": "01 / The evidence base",
+      "subtitle": "Separate durable signals from short-lived noise",
+      "body": ["Three observations frame the rest of the briefing."],
+      "metric": null,
+      "sections": [],
+      "sourceRefs": []
+    },
+    {
+      "id": "p03",
+      "type": "statement",
+      "title": "Capability gains matter only when they survive contact with workflow.",
+      "subtitle": "The adoption gap is an operating-design problem.",
+      "body": ["Teams compound value when evaluation, ownership, and feedback are explicit."],
+      "metric": null,
+      "sections": [],
+      "sourceRefs": ["Internal synthesis"]
+    },
+    {
+      "id": "p04",
+      "type": "data",
+      "title": "Evaluation coverage is expanding",
+      "subtitle": "Share of priority workflows with repeatable quality checks",
+      "body": ["Coverage rose in every observed quarter."],
+      "metric": {
+        "value": "78%",
+        "label": "current coverage"
+      },
+      "sections": [
+        { "title": "Q1", "value": 32 },
+        { "title": "Q2", "value": 45 },
+        { "title": "Q3", "value": 61 },
+        { "title": "Q4", "value": 78 }
+      ],
+      "sourceRefs": ["Evaluation registry, n=48 workflows"]
+    },
+    {
+      "id": "p05",
+      "type": "process",
+      "title": "A practical evidence loop",
+      "subtitle": "Each cycle should leave the system easier to trust",
+      "body": [],
+      "metric": null,
+      "sections": [
+        { "title": "Observe", "body": "Capture the real task and failure modes." },
+        { "title": "Evaluate", "body": "Score quality, cost, and latency together." },
+        { "title": "Adapt", "body": "Change prompts, tools, or workflow ownership." },
+        { "title": "Release", "body": "Ship with monitoring and a rollback path." }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "p06",
+      "type": "comparison",
+      "title": "Prototype behavior is not production behavior",
+      "subtitle": "The operating context changes the standard",
+      "body": [],
+      "metric": null,
+      "sections": [
+        {
+          "title": "Prototype",
+          "items": ["Curated inputs", "Expert supervision", "Manual recovery"]
+        },
+        {
+          "title": "Production",
+          "items": ["Messy inputs", "Distributed ownership", "Measured recovery"]
+        }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "p07",
+      "type": "case-study",
+      "title": "Case study / Support triage",
+      "subtitle": "A narrow launch created the evidence for expansion",
+      "body": ["The team began with one queue, a fixed escalation policy, and weekly error review."],
+      "metric": {
+        "value": "41%",
+        "label": "faster first response"
+      },
+      "sections": [
+        { "title": "Constraint", "body": "No autonomous customer-facing actions." },
+        { "title": "Result", "body": "Higher routing accuracy with stable escalation volume." }
+      ],
+      "sourceRefs": ["Eight-week operational pilot"]
+    },
+    {
+      "id": "p08",
+      "type": "timeline",
+      "title": "From experiment to operating system",
+      "subtitle": "Four stages of increasing organizational commitment",
+      "body": [],
+      "metric": null,
+      "sections": [
+        { "title": "Discover", "body": "Weeks 1–2" },
+        { "title": "Prove", "body": "Weeks 3–6" },
+        { "title": "Integrate", "body": "Weeks 7–10" },
+        { "title": "Scale", "body": "Week 11+" }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "p09",
+      "type": "matrix",
+      "title": "Prioritize by value and readiness",
+      "subtitle": "Place workflows where evidence supports the next move",
+      "body": [],
+      "metric": null,
+      "sections": [
+        { "title": "Assist now", "body": "High value · high readiness" },
+        { "title": "Instrument", "body": "High value · low readiness" },
+        { "title": "Automate selectively", "body": "Low value · high readiness" },
+        { "title": "Defer", "body": "Low value · low readiness" }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "p10",
+      "type": "image",
+      "title": "The workflow is the unit of change",
+      "subtitle": "A system map can reveal where judgment, tools, and evidence meet",
+      "body": ["Editable diagram treatment used when no approved local image is supplied."],
+      "metric": null,
+      "sections": [
+        { "title": "People", "body": "Judgment and accountability" },
+        { "title": "Models", "body": "Generation and classification" },
+        { "title": "Tools", "body": "Retrieval and action" }
+      ],
+      "sourceRefs": []
+    },
+    {
+      "id": "p11",
+      "type": "quote",
+      "title": "Trust is built through visible evidence, not declarations.",
+      "subtitle": "Research lead, applied systems team",
+      "body": ["The strongest launches make uncertainty legible."],
+      "metric": null,
+      "sections": [],
+      "sourceRefs": ["Stakeholder interview 07"]
+    },
+    {
+      "id": "p12",
+      "type": "summary",
+      "title": "Three moves for the next quarter",
+      "subtitle": "Turn isolated wins into a repeatable operating discipline",
+      "body": [],
+      "metric": null,
+      "sections": [
+        { "title": "Choose", "body": "Focus on workflows with clear value and ownership." },
+        { "title": "Measure", "body": "Pair quality thresholds with cost and latency." },
+        { "title": "Learn", "body": "Make review cadence part of the product." }
+      ],
+      "sourceRefs": []
+    }
+  ]
+}

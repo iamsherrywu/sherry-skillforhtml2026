@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "title": "Parity Fixture",
+    "styleId": "product-narrative",
+    "secondaryStyleId": null,
+    "aspectRatio": "16:9"
+  },
+  "slides": [
+    {
+      "id": "p01",
+      "type": "cover",
+      "title": "One source of truth",
+      "subtitle": "HTML and PPTX stay aligned",
+      "body": [
+        "Release briefing"
+      ],
+      "metric": null,
+      "sections": [],
+      "sourceRefs": [
+        "Approved outline p01"
+      ]
+    },
+    {
+      "id": "p02",
+      "type": "process",
+      "title": "A checked production loop",
+      "subtitle": "Every step is visible",
+      "body": [],
+      "metric": null,
+      "sections": [
+        {
+          "title": "Draft",
+          "body": "Create the chapter source."
+        },
+        {
+          "title": "Check",
+          "body": "Compare both output formats."
+        }
+      ],
+      "sourceRefs": []
+    }
+  ]
+}

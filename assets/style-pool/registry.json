@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "styles": [
+    {
+      "id": "product-narrative",
+      "name": "Product Narrative",
+      "tokens": "product-narrative/tokens.json",
+      "theme": "product-narrative/html-theme.css",
+      "preview": "product-narrative/preview.png"
+    },
+    {
+      "id": "system-monochrome",
+      "name": "System Monochrome",
+      "tokens": "system-monochrome/tokens.json",
+      "theme": "system-monochrome/html-theme.css",
+      "preview": "system-monochrome/preview.png"
+    },
+    {
+      "id": "editorial-signal",
+      "name": "Editorial Signal",
+      "tokens": "editorial-signal/tokens.json",
+      "theme": "editorial-signal/html-theme.css",
+      "preview": "editorial-signal/preview.png"
+    },
+    {
+      "id": "technical-atlas",
+      "name": "Technical Atlas",
+      "tokens": "technical-atlas/tokens.json",
+      "theme": "technical-atlas/html-theme.css",
+      "preview": "technical-atlas/preview.png"
+    },
+    {
+      "id": "creative-primitives",
+      "name": "Creative Primitives",
+      "tokens": "creative-primitives/tokens.json",
+      "theme": "creative-primitives/html-theme.css",
+      "preview": "creative-primitives/preview.png"
+    },
+    {
+      "id": "ai-research-journal",
+      "name": "AI Research Journal",
+      "tokens": "ai-research-journal/tokens.json",
+      "theme": "ai-research-journal/html-theme.css",
+      "preview": "ai-research-journal/preview.png"
+    }
+  ]
+}

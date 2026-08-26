@@ -1,0 +1,20 @@
+{
+  "name": "sherry-skillforhtml2026",
+  "version": "1.0.0",
+  "private": false,
+  "description": "A confirmation-gated workflow skill for creating editable HTML and PPTX presentations.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "test:python": "python3 -m unittest discover -s tests -p 'test_*.py' -v",
+    "check:open-source": "node scripts/check-open-source.mjs"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1",
+    "playwright": "^1.52.0",
+    "pptxgenjs": "^3.12.0"
+  }
+}

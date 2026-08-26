@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sherry 幻灯片工作流"
+  short_description: "通过多轮确认制作高级、可编辑的 HTML/PPTX 幻灯片"
+  default_prompt: "Use $sherry-skillforhtml2026 to turn my topic or confirmed Markdown into a reviewed slide deck."
+policy:
+  allow_implicit_invocation: false
