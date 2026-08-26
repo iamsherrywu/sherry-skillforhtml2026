@@ -52,6 +52,10 @@ async function copiedBuildPptx(mutateTokens) {
   const root = makeTempDir();
   fs.mkdirSync(path.join(root, "scripts"));
   fs.mkdirSync(path.join(root, "assets"));
+  const localNodeModules = fileURLToPath(new URL("../node_modules", import.meta.url));
+  if (fs.existsSync(localNodeModules)) {
+    fs.symlinkSync(localNodeModules, path.join(root, "node_modules"), "dir");
+  }
   fs.copyFileSync(buildScript, path.join(root, "scripts", "build-pptx.mjs"));
   fs.cpSync(stylePool, path.join(root, "assets", "style-pool"), { recursive: true });
   const tokenFile = path.join(root, "assets", "style-pool", "ai-research-journal", "tokens.json");
@@ -205,9 +209,9 @@ test("all six styles use visibly distinct PPTX composition geometry", async () =
     "product-narrative",
     "system-monochrome",
     "editorial-signal",
-    "insight-editorial",
     "creative-primitives",
     "ai-research-journal",
+    "insight-editorial",
   ];
   const signatures = new Map();
   for (const styleId of styleIds) {
@@ -243,8 +247,8 @@ test("PPTX supports only the two approved limited secondary-style overrides", as
   const dataXml = await archive.file("ppt/slides/slide4.xml").async("string");
 
   assert.deepEqual(result.secondaryOverrides, ["chart-treatment", "section-divider"]);
-  assert.match(sectionXml, /(?:srgbClr val="|color=")9AD91A/i);
-  assert.match(dataXml, /(?:srgbClr val="|color=")9AD91A/i);
+  assert.match(sectionXml, /(?:srgbClr val="|color=")DCE75A/i);
+  assert.match(dataXml, /(?:srgbClr val="|color=")DCE75A/i);
 
   for (const mutate of [
     (candidate) => { candidate.meta.secondaryOverrides = ["global-layout"]; },

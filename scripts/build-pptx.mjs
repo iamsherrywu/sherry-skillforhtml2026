@@ -48,7 +48,7 @@ const STYLE_COMPOSITIONS = {
   "insight-editorial": {
     id: "insight-editorial-frame",
     transform: { x: 0.28, y: 0.12, width: 0.96, height: 0.95 },
-    decoration: "atlas-frame",
+    decoration: "insight-editorial-frame",
   },
   "creative-primitives": {
     id: "creative-primitives-modules",
@@ -551,7 +551,7 @@ function decorateBase(slide, ctx, slideModel) {
       x: 10.86, y: 0, w: 2.47, h: 0.24,
       fill: { color: sectionStyle.secondary }, line: { color: sectionStyle.secondary, transparency: 100 },
     });
-  } else if (decoration === "atlas-frame") {
+  } else if (decoration === "insight-editorial-frame") {
     for (const [x, y, w, h] of [
       [0.18, 0.18, 1.08, 0], [0.18, 0.18, 0, 0.78],
       [12.07, 0.18, 1.08, 0], [13.15, 0.18, 0, 0.78],
