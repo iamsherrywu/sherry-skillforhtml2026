@@ -23,11 +23,11 @@
       "preview": "editorial-signal/preview.png"
     },
     {
-      "id": "technical-atlas",
-      "name": "Technical Atlas",
-      "tokens": "technical-atlas/tokens.json",
-      "theme": "technical-atlas/html-theme.css",
-      "preview": "technical-atlas/preview.png"
+      "id": "insight-editorial",
+      "name": "Insight Editorial",
+      "tokens": "insight-editorial/tokens.json",
+      "theme": "insight-editorial/html-theme.css",
+      "preview": "insight-editorial/preview.png"
     },
     {
       "id": "creative-primitives",

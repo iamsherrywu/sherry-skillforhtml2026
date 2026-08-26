@@ -73,4 +73,3 @@ Split work by natural chapter, never a mechanical page count. For a chapter of f
 Enable fast mode only on an explicit user request. Fast mode may combine question rounds, generate multiple chapters after outline approval, and reduce intermediate screenshot rounds. Fast mode must not skip any gate or any explicit confirmation.
 
 For `resume-project`, first rehash the latest requirements, content, outline, notes, chapter sources, style overrides, sample assets, and generated outputs before reporting the current gate. When approved material changes, automatically reopen the earliest affected gate, remove that approval and every dependent approval, and append the event to `revisionLog`. Use `revisedArtifacts` for supported external changes that are not represented by a tracked file field. Never approve a revised gate in the same state update that reopens it.
-

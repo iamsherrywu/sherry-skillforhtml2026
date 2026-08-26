@@ -205,7 +205,7 @@ test("all six styles use visibly distinct PPTX composition geometry", async () =
     "product-narrative",
     "system-monochrome",
     "editorial-signal",
-    "technical-atlas",
+    "insight-editorial",
     "creative-primitives",
     "ai-research-journal",
   ];
@@ -229,7 +229,7 @@ test("all six styles use visibly distinct PPTX composition geometry", async () =
 test("PPTX supports only the two approved limited secondary-style overrides", async () => {
   const model = fixtureModel();
   model.meta.styleId = "product-narrative";
-  model.meta.secondaryStyleId = "technical-atlas";
+  model.meta.secondaryStyleId = "insight-editorial";
   model.meta.secondaryOverrides = ["chart-treatment", "section-divider"];
   const outputFile = path.join(makeTempDir(), "secondary-overrides.pptx");
 
@@ -254,7 +254,7 @@ test("PPTX supports only the two approved limited secondary-style overrides", as
   ]) {
     const invalid = fixtureModel();
     invalid.meta.styleId = "product-narrative";
-    invalid.meta.secondaryStyleId = "technical-atlas";
+  invalid.meta.secondaryStyleId = "insight-editorial";
     invalid.meta.secondaryOverrides = ["chart-treatment"];
     mutate(invalid);
     await assert.rejects(

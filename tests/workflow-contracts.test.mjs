@@ -113,4 +113,3 @@ test("output documents require executable parity and delivery-fatal clipping che
   assert.match(output, /chart-treatment/);
   assert.match(output, /section-divider/);
 });
-

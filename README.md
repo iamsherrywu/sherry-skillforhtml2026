@@ -4,7 +4,7 @@
 
 > 先看效果：打开 [Showcase](showcase/index.html)，或直接体验 [5 页 HTML 示例](examples/ai-workflow-demo/index.html)。
 
-![六套内置视觉风格预览](assets/style-pool/technical-atlas/preview.png)
+![六套内置视觉风格预览](assets/style-pool/insight-editorial/preview.png)
 
 ## 它解决什么问题
 
@@ -61,7 +61,7 @@
 
 | 风格 | 预览 |
 | --- | --- |
-| Technical Atlas | ![Technical Atlas](assets/style-pool/technical-atlas/preview.png) |
+| Insight Editorial | ![Insight Editorial](assets/style-pool/insight-editorial/preview.png) |
 | AI Research Journal | ![AI Research Journal](assets/style-pool/ai-research-journal/preview.png) |
 | Product Narrative | ![Product Narrative](assets/style-pool/product-narrative/preview.png) |
 | System Monochrome | ![System Monochrome](assets/style-pool/system-monochrome/preview.png) |
@@ -95,4 +95,3 @@ npm run check:open-source
 ## English quick start
 
 Install Node.js 20+, Python 3.10+, npm, and the rendering tools. Run `npm install`, `python3 -m pip install -r requirements-dev.txt`, and `npx playwright install chromium`. In Codex, explicitly invoke `/sherry-skillforhtml2026`, provide your topic and source material, and approve each gate when the draft is ready. The generated single-file HTML remains the editable source; PPTX and speaker notes are optional outputs.
-

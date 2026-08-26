@@ -183,7 +183,7 @@ test("the eight approved scenarios resolve through gated maintenance pressure te
         requestText: namedRequest,
         approvedGates: ["requirements", "content", "format-notes"],
         primaryStyleId: "product-narrative",
-        secondaryStyleId: "technical-atlas",
+        secondaryStyleId: "insight-editorial",
         secondaryOverrides: ["chart-treatment", "section-divider"],
       },
       expected: {
@@ -191,7 +191,7 @@ test("the eight approved scenarios resolve through gated maintenance pressure te
         action: "one-primary-with-limited-override",
         styleDecision: {
           primaryStyleId: "product-narrative",
-          secondaryStyleId: "technical-atlas",
+          secondaryStyleId: "insight-editorial",
           secondaryOverrideAllowlist: ["chart-treatment", "section-divider"],
         },
       },
@@ -301,7 +301,7 @@ test("late maintenance actions return the earliest missing approved gate", () =>
     {
       input: {
         primaryStyleId: "product-narrative",
-        secondaryStyleId: "technical-atlas",
+        secondaryStyleId: "insight-editorial",
         approvedGates: ["requirements", "content"],
       },
       nextRequiredGate: "format-notes",
@@ -327,7 +327,7 @@ test("style maintenance pressure tests reject IDs outside the registry", () => {
     requestText: namedRequest,
     approvedGates: ["requirements", "content", "format-notes"],
     primaryStyleId: "not-a-style",
-    secondaryStyleId: "technical-atlas",
+    secondaryStyleId: "insight-editorial",
   });
   assert.notEqual(result.status, 0);
   assert.match(result.stderr, /unknown.*style|registry/i);
@@ -375,7 +375,7 @@ test("style decisions reject global replacement and persist through project stat
     requestText: namedRequest,
     approvedGates: ["requirements", "content", "format-notes"],
     primaryStyleId: "product-narrative",
-    secondaryStyleId: "technical-atlas",
+    secondaryStyleId: "insight-editorial",
     secondaryOverrides: ["chart-treatment", "section-divider"],
   }).styleDecision;
   updateStatus(created.projectDir, {
@@ -387,7 +387,7 @@ test("style decisions reject global replacement and persist through project stat
     "utf8",
   ));
   assert.equal(persisted.primaryStyleId, "product-narrative");
-  assert.equal(persisted.secondaryStyleId, "technical-atlas");
+    assert.equal(persisted.secondaryStyleId, "insight-editorial");
   assert.deepEqual(decision.secondaryOverrideAllowlist, ["chart-treatment", "section-divider"]);
 
   for (const prohibited of ["global-layout", "typography", "background"]) {
@@ -395,7 +395,7 @@ test("style decisions reject global replacement and persist through project stat
       requestText: namedRequest,
       approvedGates: ["requirements", "content", "format-notes"],
       primaryStyleId: "product-narrative",
-      secondaryStyleId: "technical-atlas",
+      secondaryStyleId: "insight-editorial",
       secondaryOverrides: [prohibited],
     });
     assert.notEqual(result.status, 0);

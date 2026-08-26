@@ -10,7 +10,7 @@ const expectedStyleIds = [
   "product-narrative",
   "system-monochrome",
   "editorial-signal",
-  "technical-atlas",
+  "insight-editorial",
   "creative-primitives",
   "ai-research-journal",
 ];

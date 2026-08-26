@@ -23,4 +23,3 @@ Maintain `materials/source-manifest.md` with this record for every asset:
 ```text
 name, URL/path, retrievedAt, author/organization, license/status, slideUsage, finalStatus.
 ```
-

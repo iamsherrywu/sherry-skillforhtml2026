@@ -42,4 +42,3 @@ A finalized Markdown shortcut inherits the user's content confirmation. Do not r
 - Read [PPTX output](references/pptx-output.md) when the selected output includes PPTX.
 - Read [deck model schema](references/deck-model-schema.md) before mapping an approved outline to either output format.
 - Read [QA checklist](references/qa-checklist.md) before showing samples, approving a chapter, or delivering a final artifact.
-

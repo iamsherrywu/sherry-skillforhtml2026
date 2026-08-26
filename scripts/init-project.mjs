@@ -205,4 +205,3 @@ if (isDirectInvocation()) {
     process.exitCode = 1;
   }
 }
-

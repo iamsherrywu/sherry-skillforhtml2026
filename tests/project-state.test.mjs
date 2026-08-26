@@ -370,7 +370,7 @@ test("outline, format, style, and notes revisions reopen their earliest owning g
     {
       name: "style selection",
       mutate() {},
-      patch: { primaryStyleId: "technical-atlas" },
+      patch: { primaryStyleId: "insight-editorial" },
       expectedGate: "style",
     },
     {

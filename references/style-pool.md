@@ -22,9 +22,9 @@ For operations, infrastructure, and status narratives. It uses a strict grid, ha
 
 For market, culture, and strategy stories. It uses asymmetric columns, serif headlines, solid color fields, annotated measures, and data-led page rhythm. Public inspiration comes from newspaper infographics, independent magazines, and public-information posters.
 
-### Technical Atlas
+### Insight Editorial
 
-For architecture, engineering, and evidence-heavy explanations. It uses coordinate grids, evidence labels, node-and-link diagrams, compact typography, and structured density. Public inspiration comes from engineering schematics, public transit maps, and scientific instrument panels.
+For insight reports, strategy stories, business reviews, and data-led narratives. It uses a warm paper field, editorial serif headlines, rounded color blocks, oversized numbers, and modular evidence panels. Public inspiration comes from editorial infographics, field notes, and public-information design, interpreted as general composition principles rather than a copied template.
 
 ### Creative Primitives
 

@@ -45,8 +45,8 @@ const STYLE_COMPOSITIONS = {
     transform: { x: 0.46, y: 0.16, width: 0.93, height: 0.94 },
     decoration: "editorial-band",
   },
-  "technical-atlas": {
-    id: "technical-atlas-frame",
+  "insight-editorial": {
+    id: "insight-editorial-frame",
     transform: { x: 0.28, y: 0.12, width: 0.96, height: 0.95 },
     decoration: "atlas-frame",
   },
