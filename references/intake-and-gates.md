@@ -28,6 +28,10 @@ Stop intake only when all fields are clear enough to approve: new or existing pr
 
 Create `requirements.md`, then ask for approval of the current gate. Interpret the reply in context rather than requiring one exact string. Clear replies such as `通过`, `没问题`, `可以`, `好的`, `确认`, `继续`, `往下走`, `确认开始制作`, `这一页过了`, `第一页没问题`, `下一阶段`, or `下一章` count when they directly answer the confirmation request. A reply containing a requested change never counts as approval; `看起来可以`, `大概没问题`, `先看看`, questions, and other uncertain language require clarification. After recognizing approval, record only the current gate; never accept a user-supplied list of future approved gates.
 
+## Gate 2: Research Decision
+
+Before creating or approving `content-source.md`, inspect whether the material would benefit from current facts, industry context, public cases, evidence, fact checking, or requested visual references. Ask one concise choice: `需要网络调研，帮我完善内容`、`只查证事实，不扩展内容`，或 `不需要调研，直接基于现有素材`。 If research is selected, search authoritative or clearly open sources, summarize only material findings into `content-source.md`, and record every adopted fact or asset in `materials/source-manifest.md`. If fact checking is selected, verify or qualify existing claims without adding a new argument. If no research is selected, do not browse for content expansion and record the decision in the project requirements or source manifest. Ask for approval of the research decision before running research; ask for content approval only after research results have been incorporated.
+
 ## Confirmed Markdown Audit
 
 For `confirmed-markdown`, inspect purpose, audience, setting, chapter logic, repeated or missing content, claims and data needing verification, required inclusions and exclusions, mixed facts versus proposals, sensitive material, separation of screen content and notes, and the closing takeaway. Present these three groups before Gate 1 and Gate 2 are approved:
@@ -49,13 +53,14 @@ Do not treat the user's claim that Markdown is confirmed as permission to skip t
 Use this exact order:
 
 1. `requirements`: approve `requirements.md` explicitly.
-2. `content`: approve the complete `content-source.md` explicitly.
-3. `format-notes`: choose HTML, PPTX, or both, decide whether to create `speaker-notes.md`, and approve the selection explicitly.
-4. `style`: approve one primary visual system explicitly.
-5. `outline`: approve `outline.md` explicitly.
-6. `samples`: approve the cover and the most information-dense representative slide explicitly.
-7. `chapters`: approve each natural chapter or requested batch explicitly.
-8. `final`: approve the checked final artifacts explicitly.
+2. `research-decision`: choose and approve the research mode explicitly.
+3. `content`: approve the complete `content-source.md` explicitly.
+4. `format-notes`: choose HTML, PPTX, or both, decide whether to create `speaker-notes.md`, and approve the selection explicitly.
+5. `style`: approve one primary visual system explicitly.
+6. `outline`: approve `outline.md` explicitly.
+7. `samples`: approve the cover and the most information-dense representative slide explicitly.
+8. `chapters`: approve each natural chapter or requested batch explicitly.
+9. `final`: approve the checked final artifacts explicitly.
 
 Record approvals as one contiguous prefix in `project-status.json`. Approve the current gate before every forward transition. Fast mode never changes this rule. Maintenance shortcuts inherit already-settled decisions and record that inheritance; they are not fast-mode gate skipping.
 
@@ -68,3 +73,4 @@ Split work by natural chapter, never a mechanical page count. For a chapter of f
 Enable fast mode only on an explicit user request. Fast mode may combine question rounds, generate multiple chapters after outline approval, and reduce intermediate screenshot rounds. Fast mode must not skip any gate or any explicit confirmation.
 
 For `resume-project`, first rehash the latest requirements, content, outline, notes, chapter sources, style overrides, sample assets, and generated outputs before reporting the current gate. When approved material changes, automatically reopen the earliest affected gate, remove that approval and every dependent approval, and append the event to `revisionLog`. Use `revisedArtifacts` for supported external changes that are not represented by a tracked file field. Never approve a revised gate in the same state update that reopens it.
+
