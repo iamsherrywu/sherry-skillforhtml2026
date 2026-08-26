@@ -2,6 +2,10 @@
 
 一个可复用的演示文稿工作流 Skill，适合把主题、目标和素材逐步整理成可演示、可修改的 HTML PPT，也可以按需生成 PPTX。它强调先问清楚，再制作；每个关键阶段都要得到确认，避免把一份素材直接粗暴地转换成页面。
 
+> 先看效果：打开 [Showcase](showcase/index.html)，或直接体验 [5 页 HTML 示例](examples/ai-workflow-demo/index.html)。
+
+![六套内置视觉风格预览](assets/style-pool/technical-atlas/preview.png)
+
 ## 它解决什么问题
 
 - 通过多轮提问澄清主题、目的、受众、时长、边界和交付格式。
@@ -45,6 +49,23 @@
 
 内置风格池包括：深色科技、未来实验室、极简数据、编辑部科技、明亮产品和高端黑银。开始制作前会展示可选模板和视觉对比页；你可以选择主风格，也可以选择一套辅助风格，但不会在整套页面中无规则混用。
 
+## 查看成品与模板
+
+- [Showcase：成品入口、制作流程和六套风格](showcase/index.html)
+- [AI 工作流示例：5 页可翻页 HTML](examples/ai-workflow-demo/index.html)
+- [模板预览目录](assets/style-pool/)
+
+示例页面使用仓库内的 HTML、CSS 和图片素材，下载仓库后可以直接打开；它们用于展示能力和视觉方向，不代表 Skill 对所有主题都固定使用同一套版式。
+
+| 风格 | 预览 |
+| --- | --- |
+| Technical Atlas | ![Technical Atlas](assets/style-pool/technical-atlas/preview.png) |
+| AI Research Journal | ![AI Research Journal](assets/style-pool/ai-research-journal/preview.png) |
+| Product Narrative | ![Product Narrative](assets/style-pool/product-narrative/preview.png) |
+| System Monochrome | ![System Monochrome](assets/style-pool/system-monochrome/preview.png) |
+| Editorial Signal | ![Editorial Signal](assets/style-pool/editorial-signal/preview.png) |
+| Creative Primitives | ![Creative Primitives](assets/style-pool/creative-primitives/preview.png) |
+
 ## 本地开发
 
 需要 Node.js 20+、Python 3.10+、npm，以及用于截图和 PPTX 验证的 Chromium、LibreOffice 和 `pdftoppm`。安装依赖：
@@ -72,3 +93,4 @@ npm run check:open-source
 ## English quick start
 
 Install Node.js 20+, Python 3.10+, npm, and the rendering tools. Run `npm install`, `python3 -m pip install -r requirements-dev.txt`, and `npx playwright install chromium`. In Codex, explicitly invoke `/sherry-skillforhtml2026`, provide your topic and source material, and approve each gate when the draft is ready. The generated single-file HTML remains the editable source; PPTX and speaker notes are optional outputs.
+
