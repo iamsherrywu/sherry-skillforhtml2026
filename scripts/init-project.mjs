@@ -38,6 +38,10 @@ const STARTER_FILES = {
 
 ## Sources
 
+## Research Mode
+
+Choose one before content approval: research and improve, fact-check only, or no external research.
+
 ## Sensitivity
 
 ## Deadline
@@ -201,3 +205,4 @@ if (isDirectInvocation()) {
     process.exitCode = 1;
   }
 }
+
