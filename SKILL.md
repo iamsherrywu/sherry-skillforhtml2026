@@ -23,7 +23,9 @@ Use `scripts/route-workflow.mjs` only as a gate-aware maintenance pressure-test 
 
 ## Core Workflow
 
-Follow the gate order: requirements, content, format-notes, style, outline, samples, chapters, final. Interpret the user's reply in context: clear approval such as `可以`, `好的`, `确认`, `继续`, `往下走`, `确认开始制作`, `这一页过了`, `第一页没问题`, `通过`, `没问题`, `下一阶段`, or `下一章` approves the current gate when it directly answers a confirmation request. A message that also requests changes is not approval; uncertain praise such as `看起来可以`, `大概没问题`, or `先看看` requires clarification. Canonicalize a recognized approval to the current gate only; do not write arbitrary future approvals. Do not assume interviews; use interview material only when the user supplies it or requests interview analysis. Do not start production before the current gate is approved.
+Follow the gate order: requirements, research decision, content, format-notes, style, outline, samples, chapters, final. Interpret the user's reply in context: clear approval such as `可以`, `好的`, `确认`, `继续`, `往下走`, `确认开始制作`, `这一页过了`, `第一页没问题`, `通过`, `没问题`, `下一阶段`, or `下一章` approves the current gate when it directly answers a confirmation request. A message that also requests changes is not approval; uncertain praise such as `看起来可以`, `大概没问题`, or `先看看` requires clarification. Canonicalize a recognized approval to the current gate only; do not write arbitrary future approvals. Do not assume interviews; use interview material only when the user supplies it or requests interview analysis. Do not start production before the current gate is approved.
+
+After requirements intake, inspect whether the supplied material has important evidence gaps, current facts, industry context, public cases, or visual references that would materially improve the deck. Ask the user to choose one research mode: `需要网络调研，帮我完善内容`, `只查证事实，不扩展内容`, or `不需要调研，直接基于现有素材`. In research mode, collect authoritative or clearly open sources, record their URLs, retrieval dates, organizations, license status, and intended use, then add the useful findings to `content-source.md` before asking for content approval. In fact-check mode, correct or annotate claims without expanding the argument. In no-research mode, proceed with the supplied material and record that external research was declined. Never silently add researched claims to slides.
 
 Use fast mode only when the user explicitly requests it. Fast mode may reduce rounds and increase batch size, but it must not skip any approval gate. When approved requirements, content, output/notes choices, style, outline, samples, chapters, or notes change, use the project state tool to automatically reopen the earliest affected gate and invalidate dependent approvals.
 
@@ -40,3 +42,4 @@ A finalized Markdown shortcut inherits the user's content confirmation. Do not r
 - Read [PPTX output](references/pptx-output.md) when the selected output includes PPTX.
 - Read [deck model schema](references/deck-model-schema.md) before mapping an approved outline to either output format.
 - Read [QA checklist](references/qa-checklist.md) before showing samples, approving a chapter, or delivering a final artifact.
+
