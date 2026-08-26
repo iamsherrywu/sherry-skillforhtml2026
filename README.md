@@ -61,8 +61,8 @@
 
 | 风格 | 预览 |
 | --- | --- |
-| Insight Editorial | ![Insight Editorial](assets/style-pool/insight-editorial/preview.png) |
 | AI Research Journal | ![AI Research Journal](assets/style-pool/ai-research-journal/preview.png) |
+| Insight Editorial | ![Insight Editorial](assets/style-pool/insight-editorial/preview.png) |
 | Product Narrative | ![Product Narrative](assets/style-pool/product-narrative/preview.png) |
 | System Monochrome | ![System Monochrome](assets/style-pool/system-monochrome/preview.png) |
 | Editorial Signal | ![Editorial Signal](assets/style-pool/editorial-signal/preview.png) |

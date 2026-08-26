@@ -23,13 +23,6 @@
       "preview": "editorial-signal/preview.png"
     },
     {
-      "id": "insight-editorial",
-      "name": "Insight Editorial",
-      "tokens": "insight-editorial/tokens.json",
-      "theme": "insight-editorial/html-theme.css",
-      "preview": "insight-editorial/preview.png"
-    },
-    {
       "id": "creative-primitives",
       "name": "Creative Primitives",
       "tokens": "creative-primitives/tokens.json",
@@ -42,6 +35,13 @@
       "tokens": "ai-research-journal/tokens.json",
       "theme": "ai-research-journal/html-theme.css",
       "preview": "ai-research-journal/preview.png"
+    },
+    {
+      "id": "insight-editorial",
+      "name": "Insight Editorial",
+      "tokens": "insight-editorial/tokens.json",
+      "theme": "insight-editorial/html-theme.css",
+      "preview": "insight-editorial/preview.png"
     }
   ]
 }

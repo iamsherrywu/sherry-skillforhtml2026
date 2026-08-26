@@ -10,9 +10,9 @@ const expectedStyleIds = [
   "product-narrative",
   "system-monochrome",
   "editorial-signal",
-  "insight-editorial",
   "creative-primitives",
   "ai-research-journal",
+  "insight-editorial",
 ];
 
 const requiredTokenKeys = [
