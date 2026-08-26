@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sherry Skill for HTML | Showcase</title>
+  <style>
+    :root { color-scheme: dark; --bg: #071018; --panel: #0d1b27; --line: #244052; --text: #f1f7fb; --muted: #9bb0bd; --cyan: #5ee7d2; --blue: #70a8ff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 Inter, ui-sans-serif, system-ui, sans-serif; }
+    main { width: min(1180px, calc(100% - 40px)); margin: 0 auto; padding: 72px 0 96px; }
+    .eyebrow { color: var(--cyan); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { max-width: 760px; margin: 16px 0; font-size: clamp(42px, 7vw, 86px); line-height: .98; letter-spacing: -.04em; }
+    h2 { margin: 0 0 16px; font-size: 30px; line-height: 1.1; }
+    p { color: var(--muted); max-width: 680px; }
+    .hero { display: grid; grid-template-columns: 1.15fr .85fr; gap: 44px; align-items: end; padding-bottom: 72px; border-bottom: 1px solid var(--line); }
+    .hero-art { min-height: 300px; padding: 22px; border: 1px solid var(--line); background: linear-gradient(140deg, #112f42, #0b151f 58%, #132b2a); position: relative; overflow: hidden; }
+    .hero-art::after { content: "HTML / 2026"; position: absolute; right: 22px; bottom: 18px; color: var(--cyan); font-size: 12px; letter-spacing: .16em; }
+    .hero-art strong { display: block; max-width: 290px; margin-top: 90px; font-size: 32px; line-height: 1.05; }
+    .hero-art span { display: block; width: 90px; height: 2px; margin-top: 20px; background: var(--cyan); }
+    .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    a { color: var(--text); text-decoration: none; }
+    .button { border: 1px solid var(--cyan); padding: 10px 14px; color: var(--cyan); }
+    .button.secondary { border-color: var(--line); color: var(--text); }
+    section { padding: 64px 0 0; }
+    .process { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+    .step { min-height: 150px; padding: 18px; background: var(--panel); }
+    .step b { display: block; color: var(--blue); font-size: 13px; }
+    .step strong { display: block; margin-top: 28px; font-size: 18px; }
+    .styles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    figure { margin: 0; border: 1px solid var(--line); background: var(--panel); }
+    figure img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+    figcaption { padding: 14px 16px 16px; }
+    figcaption strong { display: block; }
+    figcaption span { color: var(--muted); font-size: 13px; }
+    .case { display: grid; grid-template-columns: .8fr 1.2fr; gap: 28px; align-items: start; }
+    .case-card { padding: 24px; border-left: 2px solid var(--cyan); background: var(--panel); }
+    .case-card code { color: var(--cyan); }
+    footer { margin-top: 72px; color: var(--muted); font-size: 13px; }
+    @media (max-width: 760px) { main { width: min(100% - 28px, 620px); padding-top: 42px; } .hero, .case { grid-template-columns: 1fr; } .process, .styles { grid-template-columns: 1fr; } .step { min-height: auto; } .step strong { margin-top: 10px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <div>
+        <div class="eyebrow">Sherry Skill for HTML / Showcase</div>
+        <h1>让 AI 先问清楚，再把幻灯片做出来。</h1>
+        <p>一个面向 HTML 演示文稿的可复用工作流：从需求、素材和风格，到逐页确认、局部修改和最终合并。</p>
+        <div class="links"><a class="button" href="../examples/ai-workflow-demo/index.html">打开 5 页示例</a><a class="button secondary" href="../README.md">阅读 README</a></div>
+      </div>
+      <div class="hero-art"><div class="eyebrow">Editable / Offline / Reviewable</div><strong>完整素材库<br>→ 逐页大纲<br>→ 单文件 HTML</strong><span></span></div>
+    </header>
+
+    <section><h2>它怎么工作</h2><div class="process"><div class="step"><b>01</b><strong>问清需求</strong></div><div class="step"><b>02</b><strong>整理素材</strong></div><div class="step"><b>03</b><strong>选择视觉</strong></div><div class="step"><b>04</b><strong>逐章确认</strong></div><div class="step"><b>05</b><strong>合并交付</strong></div></div></section>
+
+    <section><h2>六套视觉方向</h2><p>先看图，再选风格。所有预览都在仓库内，下载后可离线查看。</p><div class="styles">
+      <figure><img src="../assets/style-pool/technical-atlas/preview.png" alt="Technical Atlas preview"><figcaption><strong>Technical Atlas</strong><span>结构化、理性、技术感</span></figcaption></figure>
+      <figure><img src="../assets/style-pool/ai-research-journal/preview.png" alt="AI Research Journal preview"><figcaption><strong>AI Research Journal</strong><span>研究感、信息密度、编辑性</span></figcaption></figure>
+      <figure><img src="../assets/style-pool/product-narrative/preview.png" alt="Product Narrative preview"><figcaption><strong>Product Narrative</strong><span>产品叙事、清晰、面向业务</span></figcaption></figure>
+      <figure><img src="../assets/style-pool/system-monochrome/preview.png" alt="System Monochrome preview"><figcaption><strong>System Monochrome</strong><span>克制、系统化、黑白对比</span></figcaption></figure>
+      <figure><img src="../assets/style-pool/editorial-signal/preview.png" alt="Editorial Signal preview"><figcaption><strong>Editorial Signal</strong><span>编辑感、个性、观点鲜明</span></figcaption></figure>
+      <figure><img src="../assets/style-pool/creative-primitives/preview.png" alt="Creative Primitives preview"><figcaption><strong>Creative Primitives</strong><span>明快、实验性、视觉活跃</span></figcaption></figure>
+    </div></section>
+
+    <section class="case"><div><h2>一个可复用案例</h2><p>示例不是为了展示一套固定模板，而是展示从内容到成品的最小闭环。</p></div><div class="case-card"><code>examples/ai-workflow-demo/</code><p>5 页 HTML 示例，包含封面、问题、工作流、确认机制和收束页。可以直接在浏览器打开，按左右方向键翻页，也可以阅读源代码并手动修改。</p><a class="button" href="../examples/ai-workflow-demo/index.html">查看示例</a></div></section>
+    <footer>Local showcase. All referenced images are stored in this repository. The deck engine remains separate from content and visual themes.</footer>
+  </main>
+</body>
+</html>
+
