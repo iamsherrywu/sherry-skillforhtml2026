@@ -28,6 +28,10 @@ test("workflow documents provide the required gated production contract", () => 
     "speaker-notes.md",
     "whole chapter or the first five slides",
     "project-status.json",
+    "research decision",
+    "需要网络调研，帮我完善内容",
+    "只查证事实，不扩展内容",
+    "不需要调研，直接基于现有素材",
     "1280×720",
     "allow_implicit_invocation",
   ];
@@ -38,6 +42,8 @@ test("workflow documents provide the required gated production contract", () => 
     assert.ok(!allText.includes(marker));
   }
   assert.match(allText, /do not assume interviews/i);
+  assert.match(allText, /research.*decision|调研决策/i);
+  assert.match(allText, /content-source\.md.*source manifest|source manifest.*content-source\.md/i);
   assert.match(allText, /never embed speaker notes in HTML/i);
   assert.match(allText, /lightweight blocker audit|轻量.*审计/i);
   assert.match(allText, /template change|更换视觉模板/i);
@@ -107,3 +113,4 @@ test("output documents require executable parity and delivery-fatal clipping che
   assert.match(output, /chart-treatment/);
   assert.match(output, /section-divider/);
 });
+
