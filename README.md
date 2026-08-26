@@ -4,8 +4,6 @@
 
 > 先看效果：打开 [Showcase](showcase/index.html)，或直接体验 [5 页 HTML 示例](examples/ai-workflow-demo/index.html)。
 
-![六套内置视觉风格预览](assets/style-pool/insight-editorial/preview.png)
-
 ## 它解决什么问题
 
 - 通过多轮提问澄清主题、目的、受众、时长、边界和交付格式。
